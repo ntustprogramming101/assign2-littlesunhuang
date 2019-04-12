@@ -93,15 +93,17 @@ void draw() {
       noStroke();
       rect(0,145,640,15);
       
-      //groundhogImg
-      image(groundhogIdleImg,groundhogIdleX,groundhogIdleY);
-      
       //sun
       noStroke();
       fill(255,255,0);
       ellipse(590,50,130,130);//outside
       fill(253,184,19);
       ellipse(590,50,120,120);//inside
+      
+      //groundhogImg
+      image(groundhogIdleImg,groundhogIdleX,groundhogIdleY);
+      
+      
       
       //AABBhit_groundhog&soldier
       if(soldierX-80<groundhogIdleX+80 && soldierX>groundhogIdleX && 
